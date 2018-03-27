@@ -28,7 +28,7 @@ apis:
   tags: Calls
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/apimetrics/calls-id-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/apimetrics/calls-id-put.md
 x-common:
 - type: x-base-url
   url: https://client.apimetrics.io
