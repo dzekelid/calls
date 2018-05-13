@@ -29,15 +29,15 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/apimetrics/calls-id-stats-since-get.md
-- name: APIMetrics Update an existing API Call
-  description: Update an existing API Call
+- name: APIMetrics Trigger an API Call to run
+  description: Trigger an API Call to run
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-metrics-logo.png
   humanURL: http://apimetrics.io
   baseURL: https://{host}//
   tags: Calls
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/apimetrics/calls-id-put.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/apimetrics/calls-id-run-post.md
 x-common:
 - type: x-base-url
   url: https://client.apimetrics.io
