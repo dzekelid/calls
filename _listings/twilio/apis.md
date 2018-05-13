@@ -42,17 +42,17 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accounts-accountsid-conferences-format-get.md
-- name: Twilio Make Call
-  description: To make a call, make an HTTP POST request. Initiate a new phone call.
+- name: Twilio Delete Conference Call Participants
+  description: Kick this participant from the conference.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/twilio-logo.png
   humanURL: http://www.twilio.com
   baseURL: https://api.twilio.com//2010-04-01/
   tags: Calls
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accounts-accountsid-calls-format-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accounts-accountsid-conferences-conferencesid-participants-callsid-format-delete.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accounts-accountsid-calls-format-post-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accounts-accountsid-conferences-conferencesid-participants-callsid-format-delete-postman.md
 x-common:
 - type: x-net-library
   url: https://www.twilio.com/docs/csharp/install
