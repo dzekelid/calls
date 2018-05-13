@@ -29,6 +29,15 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/apimetrics/calls-id-stats-since-get.md
+- name: APIMetrics Create new API Call
+  description: Create new API Call
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-metrics-logo.png
+  humanURL: http://apimetrics.io
+  baseURL: https://{host}//
+  tags: Calls
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/apimetrics/calls-post.md
 x-common:
 - type: x-base-url
   url: https://client.apimetrics.io
