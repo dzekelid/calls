@@ -42,17 +42,17 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accounts-accountsid-conferences-format-get.md
-- name: Twilio Delete Conference Call Participants
-  description: Kick this participant from the conference.
+- name: Twilio Add Conference Call Participants
+  description: Updates the status of a participant.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/twilio-logo.png
   humanURL: http://www.twilio.com
   baseURL: https://api.twilio.com//2010-04-01/
   tags: Calls
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accounts-accountsid-conferences-conferencesid-participants-callsid-format-delete.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accounts-accountsid-conferences-conferencesid-participants-callsid-format-post.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accounts-accountsid-conferences-conferencesid-participants-callsid-format-delete-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accounts-accountsid-conferences-conferencesid-participants-callsid-format-post-postman.md
 x-common:
 - type: x-net-library
   url: https://www.twilio.com/docs/csharp/install
