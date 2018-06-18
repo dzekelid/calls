@@ -1,61 +1,115 @@
 ---
 name: Twilio
-description: Twilio, the cloud communications company, providing a telephony infrastructure
-  web service in the cloud, allowing web developers to integrate phone calls, text
-  messages and IP voice communications into their web, mobile and traditional phone
-  applications.
-image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/twilio-logo.png
+x-slug: twilio
+description: Cloud communications platform for building SMS, Voice & Messaging applications
+  on an API built for global scale. Get started with a free trial.
+image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/143-twilio.jpg
 x-kinRank: "10"
-x-alexaRank: ""
-tags:
-- Voice
-- Voice
-- Telco
-- Stack Network
-- Stack
-- SMS API
-- SMS
-- Service Level Agreement
-- Reliability
-- Plans
-- Partners
-- MMS API
-- MMS
-- Messaging
-- Messaging
-- Getting Started
-- API LIfeycle
-created: "2018-03-27"
-modified: "2018-03-27"
-url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/apis.yaml
+x-alexaRank: "9195"
+tags: Calls
+created: "2018-06-17"
+modified: "2018-06-17"
+url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Twilio
-  description: Twilio, the cloud communications company, providing a telephony infrastructure
-    web service in the cloud, allowing web developers to integrate phone calls, text
-    messages and IP voice communications into their web, mobile and traditional phone
-    applications
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/twilio-logo.png
-  humanURL: ""
-  baseURL: https://api.twilio.com//2010-04-01/
+- name: Twilio Get Call
+  x-api-slug: twilio
+  description: Get Call
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/143-twilio.jpg
+  humanURL: http://www.twilio.com
+  baseURL: https://api.twilio.com//2010-04-01///Accounts/{AccountSid}/Calls/{CallSid}.{format}
   tags: Calls
   properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidcallscallsid-format-get-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accounts-accountsid-conferences-format-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidcallscallsid-format-get-openapi.md
+- name: Twilio Get Calls
+  x-api-slug: twilio
+  description: Get Calls
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/143-twilio.jpg
+  humanURL: http://www.twilio.com
+  baseURL: https://api.twilio.com//2010-04-01///Accounts/{AccountSid}/Calls.{format}
+  tags: Calls
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidcalls-format-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidcalls-format-get-openapi.md
+- name: Twilio Make Call
+  x-api-slug: twilio
+  description: To make a call, make an HTTP POST request. Initiate a new phone call.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/143-twilio.jpg
+  humanURL: http://www.twilio.com
+  baseURL: https://api.twilio.com//2010-04-01///Accounts/{AccountSid}/Calls.{format}
+  tags: Calls
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidcalls-format-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidcalls-format-post-openapi.md
+- name: Twilio Delete Conference Call Participants
+  x-api-slug: twilio
+  description: Kick this participant from the conference.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/143-twilio.jpg
+  humanURL: http://www.twilio.com
+  baseURL: https://api.twilio.com//2010-04-01///Accounts/{AccountSid}/Conferences/{ConferenceSid}/Participants/{CallSid}.{format}
+  tags: Conference Calls
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidconferencesconferencesidparticipantscallsid-format-delete-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidconferencesconferencesidparticipantscallsid-format-delete-openapi.md
+- name: Twilio Add Conference Call Participants
+  x-api-slug: twilio
+  description: Updates the status of a participant.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/143-twilio.jpg
+  humanURL: http://www.twilio.com
+  baseURL: https://api.twilio.com//2010-04-01///Accounts/{AccountSid}/Conferences/{ConferenceSid}/Participants/{CallSid}.{format}
+  tags: Conference Calls
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidconferencesconferencesidparticipantscallsid-format-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidconferencesconferencesidparticipantscallsid-format-post-openapi.md
+- name: Twilio Get Conference Call Participants
+  x-api-slug: twilio
+  description: Returns the list of participants in the conference identified byn{ConferenceSid}.n
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/143-twilio.jpg
+  humanURL: http://www.twilio.com
+  baseURL: https://api.twilio.com//2010-04-01///Accounts/{AccountSid}/Conferences/{ConferenceSid}/Participants.{format}
+  tags: Conference Calls
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidconferencesconferencesidparticipants-format-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidconferencesconferencesidparticipants-format-get-openapi.md
 - name: Twilio Get Conference Calls
+  x-api-slug: twilio
   description: Returns a list of conferences within an account. The list includes
     pagingninformation.n
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/twilio-logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/143-twilio.jpg
+  humanURL: http://www.twilio.com
+  baseURL: https://api.twilio.com//2010-04-01///Accounts/{AccountSid}/Conferences.{format}
+  tags: Conference Calls
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidconferences-format-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidconferences-format-get-openapi.md
+- name: Twilio
+  x-api-slug: twilio
+  description: Cloud communications platform for building SMS, Voice & Messaging applications
+    on an API built for global scale. Get started with a free trial.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/143-twilio.jpg
   humanURL: http://www.twilio.com
   baseURL: https://api.twilio.com//2010-04-01/
   tags: Calls
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accounts-accountsid-conferences-format-get.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accounts-accountsid-conferences-format-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/openapi.md
 x-common:
-- type: x-net-library
+- type: x--net-library
   url: https://www.twilio.com/docs/csharp/install
 - type: x-acceptable-use-policy
   url: https://www.twilio.com/legal/aup
@@ -73,8 +127,20 @@ x-common:
   url: https://www.twilio.com/help/contact
 - type: x-crunchbase
   url: http://www.crunchbase.com/company/twilio
+- type: x-crunchbase
+  url: https://crunchbase.com/organization/twilio
 - type: x-documentation
   url: https://www.twilio.com/docs/api
+- type: x-email
+  url: help@twilio.com
+- type: x-email
+  url: privacy@twilio.com
+- type: x-email
+  url: legalnotices@twilio.com
+- type: x-email
+  url: trademark@twilio.com
+- type: x-email
+  url: kyleky@twilio.com
 - type: x-getting-started
   url: https://www.twilio.com/docs/quickstart
 - type: x-github
@@ -83,7 +149,7 @@ x-common:
   url: https://www.twilio.com/docs/howto
 - type: x-java-library
   url: https://www.twilio.com/docs/java/install
-- type: x-nodejs-library
+- type: x-node-js-library
   url: https://www.twilio.com/docs/node/install
 - type: x-paid-support
   url: https://www.twilio.com/premium-support#features
@@ -92,12 +158,6 @@ x-common:
 - type: x-php-library
   url: https://www.twilio.com/docs/php/install
 - type: x-pricing
-  url: https://www.twilio.com/pricing
-- type: x-pricing--show-2
-  url: https://www.twilio.com/pricing
-- type: x-pricing--show-3
-  url: https://www.twilio.com/pricing
-- type: x-pricing--show-4
   url: https://www.twilio.com/pricing
 - type: x-privacy
   url: https://www.twilio.com/legal/privacy
@@ -129,80 +189,10 @@ x-common:
   url: https://twitter.com/twilio
 - type: x-website
   url: http://www.twilio.com
-- type: x-net-library
-  url: https://www.twilio.com/docs/csharp/install
-- type: x-acceptable-use-policy
-  url: https://www.twilio.com/legal/aup
-- type: x-application-gallery
-  url: https://www.twilio.com/showcase
-- type: x-base-url
-  url: https://api.twilio.com
-- type: x-blog
-  url: http://www.twilio.com/blog
-- type: x-blog-rss
-  url: http://www.twilio.com/blog/feed
-- type: x-community-supported-libraries
-  url: https://www.twilio.com/docs/libraries
-- type: x-contact-form
-  url: https://www.twilio.com/help/contact
-- type: x-crunchbase
-  url: http://www.crunchbase.com/company/twilio
-- type: x-documentation
-  url: https://www.twilio.com/docs/api
-- type: x-getting-started
-  url: https://www.twilio.com/docs/quickstart
-- type: x-github
-  url: https://github.com/twilio
-- type: x-how-to-guides
-  url: https://www.twilio.com/docs/howto
-- type: x-java-library
-  url: https://www.twilio.com/docs/java/install
-- type: x-nodejs-library
-  url: https://www.twilio.com/docs/node/install
-- type: x-paid-support
-  url: https://www.twilio.com/premium-support#features
-- type: x-partners
-  url: https://www.twilio.com/partners
-- type: x-php-library
-  url: https://www.twilio.com/docs/php/install
-- type: x-pricing
-  url: https://www.twilio.com/pricing
-- type: x-pricing--show-2
-  url: https://www.twilio.com/pricing
-- type: x-pricing--show-3
-  url: https://www.twilio.com/pricing
-- type: x-pricing--show-4
-  url: https://www.twilio.com/pricing
-- type: x-privacy
-  url: https://www.twilio.com/legal/privacy
-- type: x-python-library
-  url: https://www.twilio.com/docs/python/install
-- type: x-ruby-library
-  url: https://www.twilio.com/docs/ruby/install
-- type: x-salesforce-pdk
-  url: https://www.twilio.com/docs/salesforce/install
-- type: x-security
-  url: https://www.twilio.com/docs/security
-- type: x-service-level-agreement
-  url: https://www.twilio.com/legal/service-level-agreement
-- type: x-stack-overflow
-  url: http://stackoverflow.com/questions/tagged/twilio
-- type: x-status
-  url: http://status.twilio.com/
-- type: x-status-rss
-  url: http://status.twilio.com/rss
-- type: x-terms-of-service
-  url: https://www.twilio.com/legal/tos
-- type: x-trademarks
-  url: https://www.twilio.com/legal/trademark
-- type: x-transparency-report
-  url: https://www.twilio.com/blog/2015/07/transparency-report-for-government-requests-for-customer-information.html
-- type: x-transparency-report
-  url: https://www.twilio.com/legal/transparency
-- type: x-twitter
-  url: https://twitter.com/twilio
 - type: x-website
-  url: http://www.twilio.com
+  url: http://twilio.com
+- type: x-website
+  url: http://stackoverflow.com
 include: []
 maintainers:
 - FN: Kin Lane
