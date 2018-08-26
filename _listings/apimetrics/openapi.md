@@ -227,4 +227,22 @@ paths:
       - ""
       - Stats
       - Since
+  /deployments/call/{call_id}/:
+    get:
+      summary: Get all Deployments for an API Call
+      description: Get all Deployments for an API Call
+      operationId: getAllDeploymentForAPICall
+      x-api-path-slug: deploymentscallcall-id-get
+      parameters:
+      - in: path
+        name: call_id
+        description: ID of the API Call
+      responses:
+        200:
+          description: OK
+      tags:
+      - Monitoring
+      - Deployments
+      - Call
+      - Call
 ---

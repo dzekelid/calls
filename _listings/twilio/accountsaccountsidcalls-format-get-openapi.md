@@ -59,6 +59,71 @@ paths:
           description: OK
       tags:
       - Calls
+    post:
+      summary: Make Call
+      description: To make a call, make an HTTP POST request. Initiate a new phone
+        call.
+      operationId: to-make-a-call-make-an-http-post-request-initiate-a-new-phone-call
+      x-api-path-slug: accountsaccountsidcalls-format-post
+      parameters:
+      - in: path
+        name: AccountSid
+        description: The ID for the Twilio account
+      - in: path
+        name: format
+        description: By default, Twilios REST API returns XML
+        type: string
+        format: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Calls
+  /Accounts/{AccountSid}/Calls/{CallSid}/Recordings.{format}:
+    get:
+      summary: Get Recordings
+      description: Returns a list of Recording resource representations, each representing
+        anrecording generated during the course of a phone call.n
+      operationId: returns-a-list-of-recording-resource-representations-each-representing-arecording-generated-during-t
+      x-api-path-slug: accountsaccountsidcallscallsidrecordings-format-get
+      parameters:
+      - in: path
+        name: AccountSid
+        description: The ID for the Twilio account
+      - in: path
+        name: CallSid
+        description: A 34 character string that uniquely identifies the call
+      - in: path
+        name: format
+        description: By default, Twilios REST API returns XML
+        type: string
+        format: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Recordings
+  /Accounts/{AccountSid}/Conferences.{format}:
+    get:
+      summary: Get Conference Calls
+      description: Returns a list of conferences within an account. The list includes
+        pagingninformation.n
+      operationId: returns-a-list-of-conferences-within-an-account-the-list-includes-paginginformation
+      x-api-path-slug: accountsaccountsidconferences-format-get
+      parameters:
+      - in: path
+        name: AccountSid
+        description: The ID for the Twilio account
+      - in: path
+        name: format
+        description: By default, Twilios REST API returns XML
+        type: string
+        format: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Conference Calls
 x-streamrank:
   polling_total_time_average: "0"
   polling_size_download_average: "0"

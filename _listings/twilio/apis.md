@@ -7,112 +7,359 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/143-twilio
 x-kinRank: "10"
 x-alexaRank: "9195"
 tags: Calls
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-25"
+modified: "2018-08-25"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Twilio Get Call
-  x-api-slug: twilio
+- name: Twilio - Get Call
+  x-api-slug: accountsaccountsidcallscallsid-format-get
   description: Get Call
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/143-twilio.jpg
   humanURL: http://www.twilio.com
-  baseURL: https://api.twilio.com//2010-04-01///Accounts/{AccountSid}/Calls/{CallSid}.{format}
-  tags: Calls
+  baseURL: https://api.twilio.com//2010-04-01/
+  tags: Voice, SMS, Voice, MMS API, MMS, API LIfeyclessss, Getting Started Example,
+    Service Level Agreement, Stack Network, Stack, Technology, SaaS, Telecommunications,
+    Enterprise, internet, SMS, Telecommunications, Messages, Messages, Relative Data,
+    Service API, Relative StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidcallscallsid-format-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidcallscallsid-format-get-openapi.md
-- name: Twilio Get Calls
-  x-api-slug: twilio
+- name: Twilio - Get Calls
+  x-api-slug: accountsaccountsidcalls-format-get
   description: Get Calls
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/143-twilio.jpg
   humanURL: http://www.twilio.com
-  baseURL: https://api.twilio.com//2010-04-01///Accounts/{AccountSid}/Calls.{format}
-  tags: Calls
+  baseURL: https://api.twilio.com//2010-04-01/
+  tags: Voice, SMS, Voice, MMS API, MMS, API LIfeyclessss, Getting Started Example,
+    Service Level Agreement, Stack Network, Stack, Technology, SaaS, Telecommunications,
+    Enterprise, internet, SMS, Telecommunications, Messages, Messages, Relative Data,
+    Service API, Relative StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidcalls-format-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidcalls-format-get-openapi.md
-- name: Twilio Make Call
-  x-api-slug: twilio
+- name: Twilio - Make Call
+  x-api-slug: accountsaccountsidcalls-format-post
   description: To make a call, make an HTTP POST request. Initiate a new phone call.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/143-twilio.jpg
   humanURL: http://www.twilio.com
-  baseURL: https://api.twilio.com//2010-04-01///Accounts/{AccountSid}/Calls.{format}
-  tags: Calls
+  baseURL: https://api.twilio.com//2010-04-01/
+  tags: Voice, SMS, Voice, MMS API, MMS, API LIfeyclessss, Getting Started Example,
+    Service Level Agreement, Stack Network, Stack, Technology, SaaS, Telecommunications,
+    Enterprise, internet, SMS, Telecommunications, Messages, Messages, Relative Data,
+    Service API, Relative StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidcalls-format-post-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidcalls-format-post-openapi.md
-- name: Twilio Delete Conference Call Participants
-  x-api-slug: twilio
-  description: Kick this participant from the conference.
+- name: Twilio - Get Recordings
+  x-api-slug: accountsaccountsidcallscallsidrecordings-format-get
+  description: Returns a list of Recording resource representations, each representing
+    anrecording generated during the course of a phone call.n
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/143-twilio.jpg
   humanURL: http://www.twilio.com
-  baseURL: https://api.twilio.com//2010-04-01///Accounts/{AccountSid}/Conferences/{ConferenceSid}/Participants/{CallSid}.{format}
-  tags: Conference Calls
+  baseURL: https://api.twilio.com//2010-04-01/
+  tags: Voice, SMS, Voice, MMS API, MMS, API LIfeyclessss, Getting Started Example,
+    Service Level Agreement, Stack Network, Stack, Technology, SaaS, Telecommunications,
+    Enterprise, internet, SMS, Telecommunications, Messages, Messages, Relative Data,
+    Service API, Relative StreamRank, Streams
   properties:
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidconferencesconferencesidparticipantscallsid-format-delete-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidcallscallsidrecordings-format-get-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidconferencesconferencesidparticipantscallsid-format-delete-openapi.md
-- name: Twilio Add Conference Call Participants
-  x-api-slug: twilio
-  description: Updates the status of a participant.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/143-twilio.jpg
-  humanURL: http://www.twilio.com
-  baseURL: https://api.twilio.com//2010-04-01///Accounts/{AccountSid}/Conferences/{ConferenceSid}/Participants/{CallSid}.{format}
-  tags: Conference Calls
-  properties:
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidconferencesconferencesidparticipantscallsid-format-post-postman.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidconferencesconferencesidparticipantscallsid-format-post-openapi.md
-- name: Twilio Get Conference Call Participants
-  x-api-slug: twilio
-  description: Returns the list of participants in the conference identified byn{ConferenceSid}.n
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/143-twilio.jpg
-  humanURL: http://www.twilio.com
-  baseURL: https://api.twilio.com//2010-04-01///Accounts/{AccountSid}/Conferences/{ConferenceSid}/Participants.{format}
-  tags: Conference Calls
-  properties:
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidconferencesconferencesidparticipants-format-get-postman.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidconferencesconferencesidparticipants-format-get-openapi.md
-- name: Twilio Get Conference Calls
-  x-api-slug: twilio
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidcallscallsidrecordings-format-get-openapi.md
+- name: Twilio - Get Conference Calls
+  x-api-slug: accountsaccountsidconferences-format-get
   description: Returns a list of conferences within an account. The list includes
     pagingninformation.n
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/143-twilio.jpg
   humanURL: http://www.twilio.com
-  baseURL: https://api.twilio.com//2010-04-01///Accounts/{AccountSid}/Conferences.{format}
-  tags: Conference Calls
+  baseURL: https://api.twilio.com//2010-04-01/
+  tags: Voice, SMS, Voice, MMS API, MMS, API LIfeyclessss, Getting Started Example,
+    Service Level Agreement, Stack Network, Stack, Technology, SaaS, Telecommunications,
+    Enterprise, internet, SMS, Telecommunications, Messages, Messages, Relative Data,
+    Service API, Relative StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidconferences-format-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidconferences-format-get-openapi.md
-- name: Twilio
-  x-api-slug: twilio
-  description: Cloud communications platform for building SMS, Voice & Messaging applications
-    on an API built for global scale. Get started with a free trial.
+- name: Twilio - Get Calls
+  x-api-slug: accountsaccountsidcalls-format-get
+  description: Get Calls
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/143-twilio.jpg
   humanURL: http://www.twilio.com
   baseURL: https://api.twilio.com//2010-04-01/
-  tags: Calls
+  tags: Voice, SMS, Voice, MMS API, MMS, API LIfeyclessss, Getting Started Example,
+    Service Level Agreement, Stack Network, Stack, Technology, SaaS, Telecommunications,
+    Enterprise, internet, SMS, Telecommunications, Messages, Messages, Relative Data,
+    Service API, Relative StreamRank, Streams
   properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidcalls-format-get-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidcalls-format-get-openapi.md
+- name: Twilio - Make Call
+  x-api-slug: accountsaccountsidcalls-format-post
+  description: To make a call, make an HTTP POST request. Initiate a new phone call.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/143-twilio.jpg
+  humanURL: http://www.twilio.com
+  baseURL: https://api.twilio.com//2010-04-01/
+  tags: Voice, SMS, Voice, MMS API, MMS, API LIfeyclessss, Getting Started Example,
+    Service Level Agreement, Stack Network, Stack, Technology, SaaS, Telecommunications,
+    Enterprise, internet, SMS, Telecommunications, Messages, Messages, Relative Data,
+    Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidcalls-format-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidcalls-format-post-openapi.md
+- name: Twilio - Get Call
+  x-api-slug: accountsaccountsidcallscallsid-format-get
+  description: Get Call
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/143-twilio.jpg
+  humanURL: http://www.twilio.com
+  baseURL: https://api.twilio.com//2010-04-01/
+  tags: Voice, SMS, Voice, MMS API, MMS, API LIfeyclessss, Getting Started Example,
+    Service Level Agreement, Stack Network, Stack, Technology, SaaS, Telecommunications,
+    Enterprise, internet, SMS, Telecommunications, Messages, Messages, Relative Data,
+    Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidcallscallsid-format-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidcallscallsid-format-get-openapi.md
+- name: Twilio - Get Recordings
+  x-api-slug: accountsaccountsidcallscallsidrecordings-format-get
+  description: Returns a list of Recording resource representations, each representing
+    anrecording generated during the course of a phone call.n
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/143-twilio.jpg
+  humanURL: http://www.twilio.com
+  baseURL: https://api.twilio.com//2010-04-01/
+  tags: Voice, SMS, Voice, MMS API, MMS, API LIfeyclessss, Getting Started Example,
+    Service Level Agreement, Stack Network, Stack, Technology, SaaS, Telecommunications,
+    Enterprise, internet, SMS, Telecommunications, Messages, Messages, Relative Data,
+    Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidcallscallsidrecordings-format-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidcallscallsidrecordings-format-get-openapi.md
+- name: Twilio - Get Conference Calls
+  x-api-slug: accountsaccountsidconferences-format-get
+  description: Returns a list of conferences within an account. The list includes
+    pagingninformation.n
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/143-twilio.jpg
+  humanURL: http://www.twilio.com
+  baseURL: https://api.twilio.com//2010-04-01/
+  tags: Voice, SMS, Voice, MMS API, MMS, API LIfeyclessss, Getting Started Example,
+    Service Level Agreement, Stack Network, Stack, Technology, SaaS, Telecommunications,
+    Enterprise, internet, SMS, Telecommunications, Messages, Messages, Relative Data,
+    Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidconferences-format-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidconferences-format-get-openapi.md
+- name: Twilio - Get Conference Call Participants
+  x-api-slug: accountsaccountsidconferencesconferencesidparticipants-format-get
+  description: Returns the list of participants in the conference identified byn{ConferenceSid}.n
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/143-twilio.jpg
+  humanURL: http://www.twilio.com
+  baseURL: https://api.twilio.com//2010-04-01/
+  tags: Voice, SMS, Voice, MMS API, MMS, API LIfeyclessss, Getting Started Example,
+    Service Level Agreement, Stack Network, Stack, Technology, SaaS, Telecommunications,
+    Enterprise, internet, SMS, Telecommunications, Messages, Messages, Relative Data,
+    Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidconferencesconferencesidparticipants-format-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidconferencesconferencesidparticipants-format-get-openapi.md
+- name: Twilio - Delete Conference Call Participants
+  x-api-slug: accountsaccountsidconferencesconferencesidparticipantscallsid-format-delete
+  description: Kick this participant from the conference.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/143-twilio.jpg
+  humanURL: http://www.twilio.com
+  baseURL: https://api.twilio.com//2010-04-01/
+  tags: Voice, SMS, Voice, MMS API, MMS, API LIfeyclessss, Getting Started Example,
+    Service Level Agreement, Stack Network, Stack, Technology, SaaS, Telecommunications,
+    Enterprise, internet, SMS, Telecommunications, Messages, Messages, Relative Data,
+    Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidconferencesconferencesidparticipantscallsid-format-delete-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidconferencesconferencesidparticipantscallsid-format-delete-openapi.md
+- name: Twilio - Add Conference Call Participants
+  x-api-slug: accountsaccountsidconferencesconferencesidparticipantscallsid-format-post
+  description: Updates the status of a participant.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/143-twilio.jpg
+  humanURL: http://www.twilio.com
+  baseURL: https://api.twilio.com//2010-04-01/
+  tags: Voice, SMS, Voice, MMS API, MMS, API LIfeyclessss, Getting Started Example,
+    Service Level Agreement, Stack Network, Stack, Technology, SaaS, Telecommunications,
+    Enterprise, internet, SMS, Telecommunications, Messages, Messages, Relative Data,
+    Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidconferencesconferencesidparticipantscallsid-format-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidconferencesconferencesidparticipantscallsid-format-post-openapi.md
+- name: Twilio - GetParticipantForConference
+  x-api-slug: accountsaccountsidconferencesconferencesidparticipantscallsid-format-get
+  description: GetParticipantForConference
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/143-twilio.jpg
+  humanURL: http://www.twilio.com
+  baseURL: https://api.twilio.com//2010-04-01/
+  tags: Voice, SMS, Voice, MMS API, MMS, API LIfeyclessss, Getting Started Example,
+    Service Level Agreement, Stack Network, Stack, Technology, SaaS, Telecommunications,
+    Enterprise, internet, SMS, Telecommunications, Messages, Messages, Relative Data,
+    Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidconferencesconferencesidparticipantscallsid-format-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidconferencesconferencesidparticipantscallsid-format-get-openapi.md
+- name: Twilio - Get Outgoing Caller Ids
+  x-api-slug: accountsaccountsidoutgoingcallerids-get
+  description: Returns a list of OutgoingCallerId resource representations, each representingna
+    Caller ID number valid for an account. The list includes paging information.n
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/143-twilio.jpg
+  humanURL: http://www.twilio.com
+  baseURL: https://api.twilio.com//2010-04-01/
+  tags: Voice, SMS, Voice, MMS API, MMS, API LIfeyclessss, Getting Started Example,
+    Service Level Agreement, Stack Network, Stack, Technology, SaaS, Telecommunications,
+    Enterprise, internet, SMS, Telecommunications, Messages, Messages, Relative Data,
+    Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidoutgoingcallerids-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidoutgoingcallerids-get-openapi.md
+- name: Twilio - Add Outgoing Caller Id
+  x-api-slug: accountsaccountsidoutgoingcallerids-post
+  description: Adds a new CallerID to your account.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/143-twilio.jpg
+  humanURL: http://www.twilio.com
+  baseURL: https://api.twilio.com//2010-04-01/
+  tags: Voice, SMS, Voice, MMS API, MMS, API LIfeyclessss, Getting Started Example,
+    Service Level Agreement, Stack Network, Stack, Technology, SaaS, Telecommunications,
+    Enterprise, internet, SMS, Telecommunications, Messages, Messages, Relative Data,
+    Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidoutgoingcallerids-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidoutgoingcallerids-post-openapi.md
+- name: Twilio - Get Outgoing Caller Ids
+  x-api-slug: accountsaccountsidoutgoingcalleridsoutgoingcalleridsid-get
+  description: Get the set of an accounts verified phone numbers.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/143-twilio.jpg
+  humanURL: http://www.twilio.com
+  baseURL: https://api.twilio.com//2010-04-01/
+  tags: Voice, SMS, Voice, MMS API, MMS, API LIfeyclessss, Getting Started Example,
+    Service Level Agreement, Stack Network, Stack, Technology, SaaS, Telecommunications,
+    Enterprise, internet, SMS, Telecommunications, Messages, Messages, Relative Data,
+    Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidoutgoingcalleridsoutgoingcalleridsid-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidoutgoingcalleridsoutgoingcalleridsid-get-openapi.md
+- name: Twilio - Add Outgoing Caller Id
+  x-api-slug: accountsaccountsidoutgoingcalleridsoutgoingcalleridsid-post
+  description: Updates the caller id, and returns the updated resource if successful.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/143-twilio.jpg
+  humanURL: http://www.twilio.com
+  baseURL: https://api.twilio.com//2010-04-01/
+  tags: Voice, SMS, Voice, MMS API, MMS, API LIfeyclessss, Getting Started Example,
+    Service Level Agreement, Stack Network, Stack, Technology, SaaS, Telecommunications,
+    Enterprise, internet, SMS, Telecommunications, Messages, Messages, Relative Data,
+    Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidoutgoingcalleridsoutgoingcalleridsid-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidoutgoingcalleridsoutgoingcalleridsid-post-openapi.md
+- name: Twilio - Update Outgoing Caller Id
+  x-api-slug: accountsaccountsidoutgoingcalleridsoutgoingcalleridsid-put
+  description: Updates the caller id, and returns the updated resource if successful.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/143-twilio.jpg
+  humanURL: http://www.twilio.com
+  baseURL: https://api.twilio.com//2010-04-01/
+  tags: Voice, SMS, Voice, MMS API, MMS, API LIfeyclessss, Getting Started Example,
+    Service Level Agreement, Stack Network, Stack, Technology, SaaS, Telecommunications,
+    Enterprise, internet, SMS, Telecommunications, Messages, Messages, Relative Data,
+    Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidoutgoingcalleridsoutgoingcalleridsid-put-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidoutgoingcalleridsoutgoingcalleridsid-put-openapi.md
+- name: Twilio - Delete Outgoing Caller ID
+  x-api-slug: accountsaccountsidoutgoingcalleridsoutgoingcalleridsid-delete
+  description: DeleteOutgoingCallerId
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/143-twilio.jpg
+  humanURL: http://www.twilio.com
+  baseURL: https://api.twilio.com//2010-04-01/
+  tags: Voice, SMS, Voice, MMS API, MMS, API LIfeyclessss, Getting Started Example,
+    Service Level Agreement, Stack Network, Stack, Technology, SaaS, Telecommunications,
+    Enterprise, internet, SMS, Telecommunications, Messages, Messages, Relative Data,
+    Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidoutgoingcalleridsoutgoingcalleridsid-delete-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidoutgoingcalleridsoutgoingcalleridsid-delete-openapi.md
+- name: Twilio - Get Queue Members
+  x-api-slug: accountsaccountsidqueuesqueuesidmemberscallsid-get
+  description: Get a specific member.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/143-twilio.jpg
+  humanURL: http://www.twilio.com
+  baseURL: https://api.twilio.com//2010-04-01/
+  tags: Voice, SMS, Voice, MMS API, MMS, API LIfeyclessss, Getting Started Example,
+    Service Level Agreement, Stack Network, Stack, Technology, SaaS, Telecommunications,
+    Enterprise, internet, SMS, Telecommunications, Messages, Messages, Relative Data,
+    Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidqueuesqueuesidmemberscallsid-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidqueuesqueuesidmemberscallsid-get-openapi.md
+- name: Twilio - Update Queue Members
+  x-api-slug: accountsaccountsidqueuesqueuesidmemberscallsid-post
+  description: Posting a URL and Method to a Queue instance will dequeue a member
+    from anqueue and have the members call begin executing the TwiML document at that
+    URLnWhen redirecting a member of a queue addressed by CallSid, only the first
+    requestnwill succeed and return a 200 response code. A second request will fail
+    andnreturn an appropriate 400 response code.n
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/143-twilio.jpg
+  humanURL: http://www.twilio.com
+  baseURL: https://api.twilio.com//2010-04-01/
+  tags: Voice, SMS, Voice, MMS API, MMS, API LIfeyclessss, Getting Started Example,
+    Service Level Agreement, Stack Network, Stack, Technology, SaaS, Telecommunications,
+    Enterprise, internet, SMS, Telecommunications, Messages, Messages, Relative Data,
+    Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidqueuesqueuesidmemberscallsid-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/twilio/accountsaccountsidqueuesqueuesidmemberscallsid-post-openapi.md
 x-common:
 - type: x--net-library
   url: https://www.twilio.com/docs/csharp/install
 - type: x-acceptable-use-policy
   url: https://www.twilio.com/legal/aup
+- type: x-api-gallery
+  url: http://tvmaze.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://twilio.stack.network
 - type: x-application-gallery
   url: https://www.twilio.com/showcase
 - type: x-base-url

@@ -79,12 +79,13 @@ paths:
           description: OK
       tags:
       - Calls
-  /Accounts/{AccountSid}/Conferences/{ConferenceSid}/Participants/{CallSid}.{format}:
-    delete:
-      summary: Delete Conference Call Participants
-      description: Kick this participant from the conference.
-      operationId: kick-this-participant-from-the-conference
-      x-api-path-slug: accountsaccountsidconferencesconferencesidparticipantscallsid-format-delete
+  /Accounts/{AccountSid}/Calls/{CallSid}/Recordings.{format}:
+    get:
+      summary: Get Recordings
+      description: Returns a list of Recording resource representations, each representing
+        anrecording generated during the course of a phone call.n
+      operationId: returns-a-list-of-recording-resource-representations-each-representing-arecording-generated-during-t
+      x-api-path-slug: accountsaccountsidcallscallsidrecordings-format-get
       parameters:
       - in: path
         name: AccountSid
@@ -92,10 +93,6 @@ paths:
       - in: path
         name: CallSid
         description: A 34 character string that uniquely identifies the call
-      - in: path
-        name: ConferenceSid
-        description: A 34 character string that uniquely identifies the conference
-          call object
       - in: path
         name: format
         description: By default, Twilios REST API returns XML
@@ -105,23 +102,18 @@ paths:
         200:
           description: OK
       tags:
-      - Conference Calls
-    post:
-      summary: Add Conference Call Participants
-      description: Updates the status of a participant.
-      operationId: updates-the-status-of-a-participant
-      x-api-path-slug: accountsaccountsidconferencesconferencesidparticipantscallsid-format-post
+      - Recordings
+  /Accounts/{AccountSid}/Conferences.{format}:
+    get:
+      summary: Get Conference Calls
+      description: Returns a list of conferences within an account. The list includes
+        pagingninformation.n
+      operationId: returns-a-list-of-conferences-within-an-account-the-list-includes-paginginformation
+      x-api-path-slug: accountsaccountsidconferences-format-get
       parameters:
       - in: path
         name: AccountSid
         description: The ID for the Twilio account
-      - in: path
-        name: CallSid
-        description: A 34 character string that uniquely identifies the call
-      - in: path
-        name: ConferenceSid
-        description: A 34 character string that uniquely identifies the conference
-          call object
       - in: path
         name: format
         description: By default, Twilios REST API returns XML
