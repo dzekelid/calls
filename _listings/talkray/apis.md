@@ -9,8 +9,8 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1763-talkr
 x-kinRank: "7"
 x-alexaRank: "5421547"
 tags: Calls
-created: "2018-08-25"
-modified: "2018-08-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/talkray/apis.md
 specificationVersion: "0.14"
 apis: []

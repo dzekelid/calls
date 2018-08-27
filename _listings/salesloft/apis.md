@@ -14,8 +14,8 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "7"
 x-alexaRank: "0"
 tags: Calls
-created: "2018-08-25"
-modified: "2018-08-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/salesloft/apis.md
 specificationVersion: "0.14"
 apis:
@@ -167,6 +167,73 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/salesloft/v2call-data-recordsid-json-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/salesloft/v2call-data-recordsid-json-get-openapi.md
+- name: SalesLoft - Fetch a call data record
+  x-api-slug: v2call-data-recordsid-json-get
+  description: Fetches a call data record, by ID only.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/salesloft.png
+  humanURL: http://salesloft.com
+  baseURL: https://api.salesloft.com//
+  tags: Sales, Relative Data, Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/salesloft/v2call-data-recordsid-json-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/salesloft/v2call-data-recordsid-json-get-openapi.md
+- name: SalesLoft - List call data records
+  x-api-slug: v2call-data-records-json-get
+  description: |-
+    Fetches multiple call data records. The records can be filtered, paged, and sorted according to
+    the respective parameters.
+
+    Call data records are records of all inbound and outbound calls through SalesLoft. A call data record may
+    be associated with a call, but does not have to be.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/salesloft.png
+  humanURL: http://salesloft.com
+  baseURL: https://api.salesloft.com//
+  tags: Sales, Relative Data, Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/salesloft/v2call-data-records-json-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/salesloft/v2call-data-records-json-get-openapi.md
+- name: SalesLoft - Fetch a call
+  x-api-slug: v2activitiescallsid-json-get
+  description: Fetches a call, by ID only.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/salesloft.png
+  humanURL: http://salesloft.com
+  baseURL: https://api.salesloft.com//
+  tags: Sales, Relative Data, Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/salesloft/v2activitiescallsid-json-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/salesloft/v2activitiescallsid-json-get-openapi.md
+- name: SalesLoft - Fetch a call instructions
+  x-api-slug: v2action-detailscall-instructionsid-json-get
+  description: Fetches a call instruction, by ID only.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/salesloft.png
+  humanURL: http://salesloft.com
+  baseURL: https://api.salesloft.com//
+  tags: Sales, Relative Data, Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/salesloft/v2action-detailscall-instructionsid-json-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/salesloft/v2action-detailscall-instructionsid-json-get-openapi.md
+- name: SalesLoft - List call instructions
+  x-api-slug: v2action-detailscall-instructions-json-get
+  description: |-
+    Fetches multiple call instruction records. The records can be filtered, paged, and sorted according to
+    the respective parameters.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/salesloft.png
+  humanURL: http://salesloft.com
+  baseURL: https://api.salesloft.com//
+  tags: Sales, Relative Data, Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/salesloft/v2action-detailscall-instructions-json-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/salesloft/v2action-detailscall-instructions-json-get-openapi.md
 x-common:
 - type: x-api-gallery
   url: http://salesforce.api.gallery.streamdata.io

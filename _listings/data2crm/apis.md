@@ -8,8 +8,8 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "7"
 x-alexaRank: "0"
 tags: Calls
-created: "2018-08-25"
-modified: "2018-08-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/data2crm/apis.md
 specificationVersion: "0.14"
 apis:
@@ -25,6 +25,66 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/data2crm/call-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/data2crm/call-get-openapi.md
+- name: Data2CRM.API - POST for Call
+  x-api-slug: call-post
+  description: Add call into the system
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/data2crm-logo.png
+  humanURL: http://data2crm.com
+  baseURL: https://api.data2crm.com:80//v1
+  tags: CRM, API Provider, Migrations, Profiles, Service API, Relative Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/data2crm/call-post-openapi.md
+- name: Data2CRM.API - COUNT for Call
+  x-api-slug: callcount-get
+  description: Count all calls from the system
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/data2crm-logo.png
+  humanURL: http://data2crm.com
+  baseURL: https://api.data2crm.com:80//v1
+  tags: CRM, API Provider, Migrations, Profiles, Service API, Relative Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/data2crm/callcount-get-openapi.md
+- name: Data2CRM.API - DESCRIBE for Call
+  x-api-slug: calldescribe-get
+  description: Returns describe for calls
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/data2crm-logo.png
+  humanURL: http://data2crm.com
+  baseURL: https://api.data2crm.com:80//v1
+  tags: CRM, API Provider, Migrations, Profiles, Service API, Relative Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/data2crm/calldescribe-get-openapi.md
+- name: Data2CRM.API - DELETE for Call
+  x-api-slug: callcall-id-delete
+  description: Delete call information
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/data2crm-logo.png
+  humanURL: http://data2crm.com
+  baseURL: https://api.data2crm.com:80//v1
+  tags: CRM, API Provider, Migrations, Profiles, Service API, Relative Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/data2crm/callcall-id-delete-openapi.md
+- name: Data2CRM.API - GET for Call
+  x-api-slug: callcall-id-get
+  description: Return call information
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/data2crm-logo.png
+  humanURL: http://data2crm.com
+  baseURL: https://api.data2crm.com:80//v1
+  tags: CRM, API Provider, Migrations, Profiles, Service API, Relative Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/data2crm/callcall-id-get-openapi.md
+- name: Data2CRM.API - PUT for Call
+  x-api-slug: callcall-id-put
+  description: Update call information
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/data2crm-logo.png
+  humanURL: http://data2crm.com
+  baseURL: https://api.data2crm.com:80//v1
+  tags: CRM, API Provider, Migrations, Profiles, Service API, Relative Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/data2crm/callcall-id-put-openapi.md
 x-common:
 - type: x-api-gallery
   url: http://data.gov.au.api.gallery.streamdata.io

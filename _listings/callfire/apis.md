@@ -7,8 +7,8 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-call
 x-kinRank: "9"
 x-alexaRank: "129466"
 tags: Calls
-created: "2018-08-25"
-modified: "2018-08-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/callfire/apis.md
 specificationVersion: "0.14"
 apis:
@@ -28,6 +28,22 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/callfire/calls-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/callfire/calls-get-openapi.md
+- name: CallFire - Send calls
+  x-api-slug: calls-post
+  description: Use the /calls API to send individual calls quickly. A verified Caller
+    ID and sufficient credits are required to make a call. CallRecipient represents
+    a single recipient identified by phone number or contact id in CallFire system.
+    You can attach user-defined attributes to a Call action via CallRecipient.attributes
+    property, attributes are available in Call action response
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
+  humanURL: http://www.callfire.com
+  baseURL: https://www.callfire.com//v2
+  tags: SMS, Voice, Stack Network, Getting Started Example, Telecommunications, Technology,
+    SaaS, API Provider, Telecommunications, Messages, Profiles, Service API, Relative
+    Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/callfire/calls-post-openapi.md
 - name: CallFire - Find call broadcasts
   x-api-slug: callsbroadcasts-get
   description: Searches for all voice broadcasts created by user. Can query on label,
@@ -44,6 +60,61 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/callfire/callsbroadcasts-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/callfire/callsbroadcasts-get-openapi.md
+- name: CallFire - Create a call broadcast
+  x-api-slug: callsbroadcasts-post
+  description: Creates a call broadcast campaign using the Call Broadcast API. Send
+    a CallBroadcast in the message body to add details in a voice broadcast campaign.
+    The campaign can be created without contacts and bare minimum configuration, but
+    contacts will have to be added further on to use the campaign
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
+  humanURL: http://www.callfire.com
+  baseURL: https://www.callfire.com//v2
+  tags: SMS, Voice, Stack Network, Getting Started Example, Telecommunications, Technology,
+    SaaS, API Provider, Telecommunications, Messages, Profiles, Service API, Relative
+    Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/callfire/callsbroadcasts-post-openapi.md
+- name: CallFire - Find a specific call broadcast
+  x-api-slug: callsbroadcastsid-get
+  description: Returns a single CallBroadcast instance for a given call broadcast
+    campaign id
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
+  humanURL: http://www.callfire.com
+  baseURL: https://www.callfire.com//v2
+  tags: SMS, Voice, Stack Network, Getting Started Example, Telecommunications, Technology,
+    SaaS, API Provider, Telecommunications, Messages, Profiles, Service API, Relative
+    Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/callfire/callsbroadcastsid-get-openapi.md
+- name: CallFire - Update a call broadcast
+  x-api-slug: callsbroadcastsid-put
+  description: This operation lets the user modify the configuration of a voice broadcast
+    campaign after call broadcast campaign is created. See CallBroadcast for more
+    information on what can/can't be updated on this API
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
+  humanURL: http://www.callfire.com
+  baseURL: https://www.callfire.com//v2
+  tags: SMS, Voice, Stack Network, Getting Started Example, Telecommunications, Technology,
+    SaaS, API Provider, Telecommunications, Messages, Profiles, Service API, Relative
+    Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/callfire/callsbroadcastsid-put-openapi.md
+- name: CallFire - Archive voice broadcast
+  x-api-slug: callsbroadcastsidarchive-post
+  description: Archives a voice broadcast (voice broadcast will be hidden in search
+    results)
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
+  humanURL: http://www.callfire.com
+  baseURL: https://www.callfire.com//v2
+  tags: SMS, Voice, Stack Network, Getting Started Example, Telecommunications, Technology,
+    SaaS, API Provider, Telecommunications, Messages, Profiles, Service API, Relative
+    Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/callfire/callsbroadcastsidarchive-post-openapi.md
 - name: CallFire - Find batches in a call broadcast
   x-api-slug: callsbroadcastsidbatches-get
   description: This endpoint will enable the user to page through all of the batches
@@ -59,6 +130,88 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/callfire/callsbroadcastsidbatches-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/callfire/callsbroadcastsidbatches-get-openapi.md
+- name: CallFire - Add batches to a call broadcast
+  x-api-slug: callsbroadcastsidbatches-post
+  description: The 'add batch' API allows user to add additional batches to an already
+    created voice broadcast campaign. The added batch will go through the CallFire
+    validation process, unlike in the recipients version of this API. That is why
+    you can use the scrubDuplicates flag to remove duplicates from your batch. Batches
+    may be added as a contact list id, a list of contact ids, or a list of numbers
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
+  humanURL: http://www.callfire.com
+  baseURL: https://www.callfire.com//v2
+  tags: SMS, Voice, Stack Network, Getting Started Example, Telecommunications, Technology,
+    SaaS, API Provider, Telecommunications, Messages, Profiles, Service API, Relative
+    Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/callfire/callsbroadcastsidbatches-post-openapi.md
+- name: CallFire - Find calls in a call broadcast
+  x-api-slug: callsbroadcastsidcalls-get
+  description: This endpoint will enable the user to page through all calls for a
+    particular call broadcast campaign
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
+  humanURL: http://www.callfire.com
+  baseURL: https://www.callfire.com//v2
+  tags: SMS, Voice, Stack Network, Getting Started Example, Telecommunications, Technology,
+    SaaS, API Provider, Telecommunications, Messages, Profiles, Service API, Relative
+    Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/callfire/callsbroadcastsidcalls-get-openapi.md
+- name: CallFire - Add recipients to a call broadcast
+  x-api-slug: callsbroadcastsidrecipients-post
+  description: Use this API to add the recipients to an existing voice broadcast.
+    Post a list of Recipient objects to be added to the voice broadcast campaign.
+    These contacts will not go through validation process, and will be acted upon
+    as they are added. Recipients may be added as a list of contact ids, or list of
+    numbers
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
+  humanURL: http://www.callfire.com
+  baseURL: https://www.callfire.com//v2
+  tags: SMS, Voice, Stack Network, Getting Started Example, Telecommunications, Technology,
+    SaaS, API Provider, Telecommunications, Messages, Profiles, Service API, Relative
+    Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/callfire/callsbroadcastsidrecipients-post-openapi.md
+- name: CallFire - Start voice broadcast
+  x-api-slug: callsbroadcastsidstart-post
+  description: Start a voice broadcast
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
+  humanURL: http://www.callfire.com
+  baseURL: https://www.callfire.com//v2
+  tags: SMS, Voice, Stack Network, Getting Started Example, Telecommunications, Technology,
+    SaaS, API Provider, Telecommunications, Messages, Profiles, Service API, Relative
+    Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/callfire/callsbroadcastsidstart-post-openapi.md
+- name: CallFire - Get statistics on call broadcast
+  x-api-slug: callsbroadcastsidstats-get
+  description: Returns broadcast statistics like total number of sent/received actions,
+    total cost, number of remaining outbound actions, error count, etc
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
+  humanURL: http://www.callfire.com
+  baseURL: https://www.callfire.com//v2
+  tags: SMS, Voice, Stack Network, Getting Started Example, Telecommunications, Technology,
+    SaaS, API Provider, Telecommunications, Messages, Profiles, Service API, Relative
+    Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/callfire/callsbroadcastsidstats-get-openapi.md
+- name: CallFire - Stop voice broadcast
+  x-api-slug: callsbroadcastsidstop-post
+  description: Stop a voice broadcast
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
+  humanURL: http://www.callfire.com
+  baseURL: https://www.callfire.com//v2
+  tags: SMS, Voice, Stack Network, Getting Started Example, Telecommunications, Technology,
+    SaaS, API Provider, Telecommunications, Messages, Profiles, Service API, Relative
+    Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/callfire/callsbroadcastsidstop-post-openapi.md
 - name: CallFire - Get call recording by id
   x-api-slug: callsrecordingsid-get
   description: Returns metadata of recording of a particular call. Metadata contains
@@ -89,6 +242,18 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/callfire/callsrecordingsid-mp3-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/callfire/callsrecordingsid-mp3-get-openapi.md
+- name: CallFire - Find a specific call
+  x-api-slug: callsid-get
+  description: Returns a single Call instance for a given call id.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
+  humanURL: http://www.callfire.com
+  baseURL: https://www.callfire.com//v2
+  tags: SMS, Voice, Stack Network, Getting Started Example, Telecommunications, Technology,
+    SaaS, API Provider, Telecommunications, Messages, Profiles, Service API, Relative
+    Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/callfire/callsid-get-openapi.md
 - name: CallFire - Get call recordings for a call
   x-api-slug: callsidrecordings-get
   description: Returns a list of recordings metadata of particular call. Metadata
@@ -134,6 +299,20 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/callfire/callsidrecordingsname-mp3-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/callfire/callsidrecordingsname-mp3-get-openapi.md
+- name: CallFire - Add sound via call
+  x-api-slug: campaignssoundscalls-post
+  description: Use this API to create a sound via a phone call. Provide the required
+    phone number in the CallCreateSound object inside the request, and user will receive
+    a call shortly after with instructions on how to record a sound over the phone.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/11768-callfire.jpg
+  humanURL: http://www.callfire.com
+  baseURL: https://www.callfire.com//v2
+  tags: SMS, Voice, Stack Network, Getting Started Example, Telecommunications, Technology,
+    SaaS, API Provider, Telecommunications, Messages, Profiles, Service API, Relative
+    Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/callfire/campaignssoundscalls-post-openapi.md
 x-common:
 - type: x--net-sdk
   url: https://github.com/CallFire/CallFire-CSharp-SDK

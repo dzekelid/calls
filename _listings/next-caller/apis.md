@@ -8,8 +8,8 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/2468-next-
 x-kinRank: "8"
 x-alexaRank: "3612031"
 tags: Calls
-created: "2018-08-25"
-modified: "2018-08-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/calls/master/_listings/next-caller/apis.md
 specificationVersion: "0.14"
 apis: []
